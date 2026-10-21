@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Anindeep/Desktop/Cab%20Booking%20App/middleware.ts"],"sourcesContent":["import { clerkMiddleware } from \"@clerk/nextjs/server\";\nimport { NextResponse } from \"next/server\";\n\nconst middleware = process.env.CLERK_SECRET_KEY && process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY\n  ? clerkMiddleware()\n  : () => NextResponse.next();\n\nexport default middleware;\nexport const config = {\n  matcher: [\"/((?!_next|[^?]*\\\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)\", \"/(api|trpc)(.*)\"],\n};\r\n"],"names":["middleware","process","env","CLERK_SECRET_KEY","NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY","next","config","matcher"],"mappings":";;;;;;AAAA;AACA;AAAA;;;AAEA,MAAMA,aAAaC,QAAQC,GAAG,CAACC,gBAAgB,IAAIF,QAAQC,GAAG,CAACE,iCAAiC,GAC5F,IAAA,wMAAe,MACf,IAAM,6MAAY,CAACC,IAAI;uCAEZL;AACR,MAAMM,SAAS;IACpBC,SAAS;QAAC;QAAuH;KAAkB;AACrJ"}}]
+}

@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/rides/layout,_N_T_/rides/page,_N_T_/rides"
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/8dcec37de3f8f609fe77bd63bb4251cad27ee785c9eba78e004aba7dc0c98dee/$/rides",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/rides/page"
+    },
+    "isFallback": false
+  }
+}

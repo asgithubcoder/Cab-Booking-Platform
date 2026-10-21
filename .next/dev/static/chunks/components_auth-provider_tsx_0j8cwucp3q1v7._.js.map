@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Anindeep/Desktop/Cab%20Booking%20App/components/auth-provider.tsx"],"sourcesContent":["\"use client\";\n\nimport { ClerkProvider } from \"@clerk/nextjs\";\nimport type { ReactNode } from \"react\";\n\nexport function AuthProvider({ children }: { children: ReactNode }) {\n  const publishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;\n  return publishableKey ? <ClerkProvider publishableKey={publishableKey}>{children}</ClerkProvider> : <>{children}</>;\n}\r\n"],"names":["AuthProvider","children","publishableKey","env","NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY"],"mappings":";;;;AAMyB;;AAJzB;AAFA;;;AAKO,SAASA,aAAa,EAAEC,QAAQ,EAA2B;IAChE,MAAMC,iBAAiB,2KAAO,CAACC,GAAG,CAACC,iCAAiC;IACpE,OAAOF,+BAAiB,6LAAC,6LAAa;QAACA,gBAAgBA;kBAAiBD;;;;;6BAA4B;kBAAGA;;;;;;AACzG;KAHgBD"}}]
+}
